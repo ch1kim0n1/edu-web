@@ -2,6 +2,11 @@ export const DATA_PATH = "data/offers.json";
 export const PAGE_SIZE = 20;
 export const CONTRIBUTE_URL = "https://github.com/ch1kim0n1/edu-web/blob/main/CONTRIBUTING.md";
 export const ICONIFY_SCRIPT_URL = "https://code.iconify.design/iconify-icon/2.2.0/iconify-icon.min.js";
+export const GITHUB_REPO_OWNER = "ch1kim0n1";
+export const GITHUB_REPO_NAME = "edu-web";
+export const BROKEN_DEAL_LABEL = "broken-deal";
+export const BROKEN_DEAL_TOKEN_STORAGE_KEY = "edu_hub_github_token";
+export const SUPPORT_EMAIL = "vxk230059@utdallas.edu";
 
 export const AREA_LABELS = Object.freeze({
   cs: "Computer Science",

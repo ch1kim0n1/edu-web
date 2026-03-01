@@ -215,7 +215,11 @@ function createOfferCard(
   offer,
   index,
   searchText,
-  { favoritesSet = new Set(), onToggleFavorite = null } = {}
+  {
+    favoritesSet = new Set(),
+    onToggleFavorite = null,
+    onReportBrokenDeal = null
+  } = {}
 ) {
   const card = document.createElement("article");
   card.className = "offer-card";
@@ -354,6 +358,21 @@ function createOfferCard(
   const actionsRow = document.createElement("div");
   actionsRow.className = "card-actions";
   actionsRow.append(linkButton);
+
+  if (!offer.isShady) {
+    const reportButton = document.createElement("button");
+    reportButton.type = "button";
+    reportButton.className = "btn btn-secondary btn-small btn-report";
+    reportButton.textContent = "Report Broken Deal";
+    reportButton.setAttribute("aria-label", `Report ${offer.companyName} as broken`);
+    reportButton.addEventListener("click", (event) => {
+      event.stopPropagation();
+      if (typeof onReportBrokenDeal === "function") {
+        onReportBrokenDeal(offer, reportButton);
+      }
+    });
+    actionsRow.append(reportButton);
+  }
 
   const backTitle = document.createElement("p");
   backTitle.className = "back-title";

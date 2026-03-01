@@ -834,6 +834,14 @@ select {
   flex-wrap: wrap;
 }
 
+.btn-report {
+  background: #f9fafb;
+}
+
+.btn-report:hover {
+  background: #f3f4f6;
+}
+
 .offer-card.shady-card .offer-card-front {
   border-color: #d2a99e;
   background: linear-gradient(180deg, #fffdfd 0%, #fff7f3 100%);
@@ -972,10 +980,7 @@ select {
 }
 
 .area-glyph-back .area-glyph-spark {
-  width: 10px;
-  height: 10px;
-  top: 10px;
-  right: 10px;
+  display: none;
 }
 
 .area-creative {

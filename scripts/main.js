@@ -1,4 +1,13 @@
-import { CONTRIBUTE_URL, DATA_PATH, ensureIconifyLoaded } from "./config.js";
+import {
+  BROKEN_DEAL_LABEL,
+  BROKEN_DEAL_TOKEN_STORAGE_KEY,
+  CONTRIBUTE_URL,
+  DATA_PATH,
+  GITHUB_REPO_NAME,
+  GITHUB_REPO_OWNER,
+  SUPPORT_EMAIL,
+  ensureIconifyLoaded
+} from "./config.js";
 import { fetchOffersData } from "./data.js";
 import { filterOffers, paginateOffers, sortOffers } from "./filters.js";
 import {
@@ -34,6 +43,9 @@ import {
 const state = createInitialState();
 const mobileMedia = window.matchMedia("(max-width: 640px)");
 const FAVORITES_STORAGE_KEY = "edu_hub_favorites_v1";
+const ISSUE_MARKER_PREFIX = "edu-hub-deal-id";
+const GITHUB_API_BASE = "https://api.github.com";
+const BROKEN_DEAL_PLUS_ONE = "+1";
 let datasetLastUpdated = null;
 
 const elements = {
@@ -319,6 +331,205 @@ function closeResumeModal() {
   elements.body.classList.remove("resume-modal-open");
 }
 
+function normalizeText(value) {
+  return typeof value === "string" ? value.trim() : "";
+}
+
+function safeOpenExternal(url) {
+  if (!url) {
+    return;
+  }
+  window.open(url, "_blank", "noopener,noreferrer");
+}
+
+function getStoredGitHubToken() {
+  try {
+    return normalizeText(window.localStorage.getItem(BROKEN_DEAL_TOKEN_STORAGE_KEY));
+  } catch {
+    return "";
+  }
+}
+
+function buildIssueMarker(offerId) {
+  return `${ISSUE_MARKER_PREFIX}:${offerId}`;
+}
+
+function buildBrokenDealIssueTitle(offer) {
+  return `[Broken Deal] ${offer.companyName} (${offer.id})`;
+}
+
+function buildBrokenDealIssueBody(offer) {
+  const marker = buildIssueMarker(offer.id);
+  const currentPageUrl = window.location.href;
+
+  return [
+    "## Broken deal report",
+    "",
+    `- Company: ${offer.companyName}`,
+    `- Deal ID: ${offer.id}`,
+    `- Offer URL: ${offer.officialUrl}`,
+    `- Reported from: ${currentPageUrl}`,
+    "",
+    "### What is broken?",
+    "- [ ] Link is dead",
+    "- [ ] Promo no longer works",
+    "- [ ] Student verification is rejected",
+    "- [ ] Other (explain below)",
+    "",
+    "### Additional details",
+    "Please add any error messages, screenshots, or notes that help reproduce the issue.",
+    "",
+    `<!-- ${marker} -->`,
+    marker
+  ].join("\n");
+}
+
+function buildBrokenDealIssueUrl(offer) {
+  const baseUrl = `https://github.com/${GITHUB_REPO_OWNER}/${GITHUB_REPO_NAME}/issues/new`;
+  const params = new URLSearchParams({
+    labels: BROKEN_DEAL_LABEL,
+    title: buildBrokenDealIssueTitle(offer),
+    body: buildBrokenDealIssueBody(offer)
+  });
+  return `${baseUrl}?${params.toString()}`;
+}
+
+function buildBrokenDealMailtoUrl(offer) {
+  const subject = `[Broken Deal] ${offer.companyName} (${offer.id})`;
+  const body = [
+    `Company: ${offer.companyName}`,
+    `Deal ID: ${offer.id}`,
+    `Offer URL: ${offer.officialUrl}`,
+    "",
+    "What is broken:",
+    "-",
+    "",
+    "Additional details:",
+    "-"
+  ].join("\n");
+  return `mailto:${encodeURIComponent(SUPPORT_EMAIL)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+}
+
+async function findExistingBrokenDealIssue(offer) {
+  const marker = buildIssueMarker(offer.id);
+  const url = `${GITHUB_API_BASE}/repos/${GITHUB_REPO_OWNER}/${GITHUB_REPO_NAME}/issues?state=all&per_page=100&sort=created&direction=desc`;
+  const response = await fetch(url, {
+    headers: {
+      Accept: "application/vnd.github+json"
+    }
+  });
+
+  if (!response.ok) {
+    throw new Error(`Issue lookup failed with status ${response.status}.`);
+  }
+
+  const payload = await response.json();
+  if (!Array.isArray(payload) || payload.length === 0) {
+    return null;
+  }
+
+  for (const item of payload) {
+    if (!item || item.pull_request) {
+      continue;
+    }
+
+    const issueBody = normalizeText(item.body);
+    if (!issueBody.includes(marker)) {
+      continue;
+    }
+
+    if (!item.number || !item.html_url) {
+      continue;
+    }
+
+    return {
+      number: item.number,
+      htmlUrl: item.html_url
+    };
+  }
+
+  return null;
+}
+
+async function postPlusOneComment(issueNumber) {
+  const token = getStoredGitHubToken();
+  if (!token) {
+    return false;
+  }
+
+  const response = await fetch(
+    `${GITHUB_API_BASE}/repos/${GITHUB_REPO_OWNER}/${GITHUB_REPO_NAME}/issues/${issueNumber}/comments`,
+    {
+      method: "POST",
+      headers: {
+        Accept: "application/vnd.github+json",
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${token}`
+      },
+      body: JSON.stringify({ body: BROKEN_DEAL_PLUS_ONE })
+    }
+  );
+
+  return response.ok;
+}
+
+async function copyPlusOneToClipboard() {
+  if (!navigator.clipboard || typeof navigator.clipboard.writeText !== "function") {
+    return false;
+  }
+
+  try {
+    await navigator.clipboard.writeText(BROKEN_DEAL_PLUS_ONE);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+async function handleReportBrokenDeal(offer, triggerButton = null) {
+  if (!offer || !offer.id) {
+    return;
+  }
+
+  const defaultLabel = "Report Broken Deal";
+  const originalLabel = triggerButton ? triggerButton.textContent : defaultLabel;
+  if (triggerButton) {
+    triggerButton.disabled = true;
+    triggerButton.textContent = "Checking...";
+  }
+
+  try {
+    const existingIssue = await findExistingBrokenDealIssue(offer);
+    if (existingIssue) {
+      const autoCommented = await postPlusOneComment(existingIssue.number);
+      if (autoCommented) {
+        safeOpenExternal(existingIssue.htmlUrl);
+        window.alert(`Added "${BROKEN_DEAL_PLUS_ONE}" to issue #${existingIssue.number}.`);
+        return;
+      }
+
+      const copied = await copyPlusOneToClipboard();
+      safeOpenExternal(`${existingIssue.htmlUrl}#new_comment_field`);
+      window.alert(
+        copied
+          ? `Issue #${existingIssue.number} already exists. "${BROKEN_DEAL_PLUS_ONE}" was copied; paste it as a comment.`
+          : `Issue #${existingIssue.number} already exists. Please comment "${BROKEN_DEAL_PLUS_ONE}" on it.`
+      );
+      return;
+    }
+
+    safeOpenExternal(buildBrokenDealIssueUrl(offer));
+  } catch (error) {
+    console.warn("Broken-deal issue flow failed; falling back to email.", error);
+    safeOpenExternal(buildBrokenDealMailtoUrl(offer));
+  } finally {
+    if (triggerButton) {
+      triggerButton.disabled = false;
+      triggerButton.textContent = originalLabel || defaultLabel;
+    }
+  }
+}
+
 function applyContributeLinks() {
   if (elements.contributeTop) {
     elements.contributeTop.href = CONTRIBUTE_URL;
@@ -433,7 +644,8 @@ function recomputeAndRender() {
 
   renderCards(elements.cardsContainer, pagedOffers, state.filters.searchText, {
     favoritesSet: state.favorites,
-    onToggleFavorite: handleFavoriteToggle
+    onToggleFavorite: handleFavoriteToggle,
+    onReportBrokenDeal: handleReportBrokenDeal
   });
 
   const showEmptyState = sorted.length === 0;

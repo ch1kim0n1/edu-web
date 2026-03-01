@@ -19,6 +19,8 @@ const REQUIRED_STRING_FIELDS = [
   "officialUrl",
   "addedDate"
 ];
+const OFFERS_CACHE_STORAGE_KEY = "edu_hub_offers_cache_v1";
+const OFFERS_CACHE_FALLBACK_MAX_AGE_MS = 1000 * 60 * 60 * 24 * 14;
 
 function isObject(value) {
   return value !== null && typeof value === "object" && !Array.isArray(value);
@@ -26,6 +28,78 @@ function isObject(value) {
 
 function normalizeString(value) {
   return typeof value === "string" ? value.trim() : "";
+}
+
+function getLocalStorageSafe() {
+  if (typeof window === "undefined" || !window.localStorage) {
+    return null;
+  }
+
+  try {
+    return window.localStorage;
+  } catch {
+    return null;
+  }
+}
+
+function isValidRawPayload(payload) {
+  return isObject(payload) && Array.isArray(payload.offers);
+}
+
+function readCachedRawPayload() {
+  const storage = getLocalStorageSafe();
+  if (!storage) {
+    return null;
+  }
+
+  try {
+    const raw = storage.getItem(OFFERS_CACHE_STORAGE_KEY);
+    if (!raw) {
+      return null;
+    }
+
+    const parsed = JSON.parse(raw);
+    if (!isObject(parsed)) {
+      return null;
+    }
+
+    const payload = parsed.payload;
+    if (!isValidRawPayload(payload)) {
+      return null;
+    }
+
+    return {
+      payload,
+      etag: normalizeString(parsed.etag),
+      lastModified: normalizeString(parsed.lastModified),
+      version: normalizeString(parsed.version),
+      savedAt: typeof parsed.savedAt === "number" ? parsed.savedAt : 0
+    };
+  } catch {
+    return null;
+  }
+}
+
+function writeCachedRawPayload(payload, cacheMeta = {}) {
+  const storage = getLocalStorageSafe();
+  if (!storage || !isValidRawPayload(payload)) {
+    return;
+  }
+
+  const metadata = isObject(payload.metadata) ? payload.metadata : {};
+  const cacheRecord = {
+    payload,
+    etag: normalizeString(cacheMeta.etag),
+    lastModified: normalizeString(cacheMeta.lastModified),
+    version: normalizeString(metadata.version),
+    savedAt: Date.now()
+  };
+
+  try {
+    storage.setItem(OFFERS_CACHE_STORAGE_KEY, JSON.stringify(cacheRecord));
+  } catch {
+    // noop: storage can be full or unavailable.
+  }
 }
 
 function isIsoDate(dateValue) {
@@ -183,13 +257,11 @@ function validateOffer(rawOffer, index) {
   };
 }
 
-export async function fetchOffersData(dataPath = DATA_PATH) {
-  const response = await fetch(dataPath, { cache: "no-store" });
-  if (!response.ok) {
-    throw new Error(`Failed to fetch ${dataPath} (status ${response.status}).`);
+function mapValidatedOffers(rawPayload) {
+  if (!isValidRawPayload(rawPayload)) {
+    throw new Error("Invalid JSON structure. Expected { metadata, offers[] }.");
   }
 
-  const rawPayload = await response.json();
   if (!isObject(rawPayload) || !Array.isArray(rawPayload.offers)) {
     throw new Error("Invalid JSON structure. Expected { metadata, offers[] }.");
   }
@@ -204,6 +276,75 @@ export async function fetchOffersData(dataPath = DATA_PATH) {
     }));
 
   return { metadata, offers };
+}
+
+async function fetchRawPayloadWithCache(dataPath) {
+  const cached = readCachedRawPayload();
+  const requestHeaders = {};
+  if (cached && cached.etag) {
+    requestHeaders["If-None-Match"] = cached.etag;
+  }
+  if (cached && cached.lastModified) {
+    requestHeaders["If-Modified-Since"] = cached.lastModified;
+  }
+
+  try {
+    const response = await fetch(dataPath, {
+      cache: "no-cache",
+      headers: requestHeaders
+    });
+
+    if (response.status === 304 && cached) {
+      return cached.payload;
+    }
+
+    if (!response.ok) {
+      throw new Error(`Failed to fetch ${dataPath} (status ${response.status}).`);
+    }
+
+    const rawPayload = await response.json();
+    if (!isValidRawPayload(rawPayload)) {
+      throw new Error("Invalid JSON structure. Expected { metadata, offers[] }.");
+    }
+
+    const etag = normalizeString(response.headers.get("etag"));
+    const lastModified = normalizeString(response.headers.get("last-modified"));
+    const cachedVersion = cached ? normalizeString(cached.version) : "";
+    const fetchedVersion = normalizeString(rawPayload?.metadata?.version);
+
+    if (
+      cached &&
+      !etag &&
+      !lastModified &&
+      fetchedVersion &&
+      cachedVersion &&
+      fetchedVersion === cachedVersion
+    ) {
+      writeCachedRawPayload(cached.payload, {
+        etag: "",
+        lastModified: "",
+        version: cachedVersion
+      });
+      return cached.payload;
+    }
+
+    writeCachedRawPayload(rawPayload, { etag, lastModified, version: fetchedVersion });
+    return rawPayload;
+  } catch (error) {
+    if (cached) {
+      const ageMs = Date.now() - cached.savedAt;
+      if (ageMs <= OFFERS_CACHE_FALLBACK_MAX_AGE_MS) {
+        console.warn("Using cached offers payload due to network error.");
+        return cached.payload;
+      }
+    }
+    throw error;
+  }
+}
+
+export async function fetchOffersData(dataPath = DATA_PATH) {
+  const rawPayload = await fetchRawPayloadWithCache(dataPath);
+  return mapValidatedOffers(rawPayload);
 }
 
 function countBy(offers, key, orderedKeys) {
