@@ -1,0 +1,699 @@
+{
+  "generatedAt": "2026-03-01T05:10:39.094Z",
+  "summary": {
+    "total": 76,
+    "working": 66,
+    "restricted": 10,
+    "broken": 0,
+    "timeout": 0
+  },
+  "results": [
+    {
+      "url": "https://account.chase.com/consumer/banking/student-checking",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://www.chase.com/digital/resources/oops.html",
+      "companies": [
+        "Chase"
+      ]
+    },
+    {
+      "url": "https://azure.microsoft.com/en-us/free/students/",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://azure.microsoft.com/en-us/free/students/",
+      "companies": [
+        "Microsoft Azure"
+      ]
+    },
+    {
+      "url": "https://cellulardata.ubigi.com/",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://cellulardata.ubigi.com/",
+      "companies": [
+        "Ubigi eSIM"
+      ]
+    },
+    {
+      "url": "https://edu.google.com/ai/gemini-for-education/",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://edu.google.com/ai/gemini-for-education/",
+      "companies": [
+        "Google Gemini"
+      ]
+    },
+    {
+      "url": "https://edu.google.com/products/workspace-for-education/",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://edu.google.com/workspace-for-education/editions/overview/",
+      "companies": [
+        "Google Workspace for Education"
+      ]
+    },
+    {
+      "url": "https://education.github.com/pack",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://education.github.com/pack",
+      "companies": [
+        "GitHub",
+        "GitHub Certification"
+      ]
+    },
+    {
+      "url": "https://education.github.com/pack/redeem/namecheap-student-domain",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://education.github.com/pack",
+      "companies": [
+        "Namecheap"
+      ]
+    },
+    {
+      "url": "https://hianime.to/",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://hianime.to/",
+      "companies": [
+        "HiAnime"
+      ]
+    },
+    {
+      "url": "https://librarygenesis.net/",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://librarygenesis.net/",
+      "companies": [
+        "LibGen"
+      ]
+    },
+    {
+      "url": "https://miro.com/education/",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://miro.com/education-whiteboard/",
+      "companies": [
+        "Miro"
+      ]
+    },
+    {
+      "url": "https://nordvpn.com/student-discount/",
+      "classification": "restricted",
+      "status": 403,
+      "finalUrl": "https://nordvpn.com/student-discount/",
+      "companies": [
+        "NordVPN"
+      ]
+    },
+    {
+      "url": "https://store.ubisoft.com/us/",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://store.ubisoft.com/us/home?lang=en_US",
+      "companies": [
+        "Ubisoft Store"
+      ]
+    },
+    {
+      "url": "https://subscribe.washingtonpost.com/student",
+      "classification": "restricted",
+      "status": 403,
+      "finalUrl": "https://subscribe.washingtonpost.com/student",
+      "companies": [
+        "The Washington Post"
+      ]
+    },
+    {
+      "url": "https://support.apple.com/en-us/HT205928",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://support.apple.com/en-us/106008",
+      "companies": [
+        "Apple Music"
+      ]
+    },
+    {
+      "url": "https://surfshark.com/student-discount",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://surfshark.com/student-discount",
+      "companies": [
+        "Surfshark"
+      ]
+    },
+    {
+      "url": "https://unity.com/products/unity-student",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://unity.com/products/unity-student",
+      "companies": [
+        "Unity"
+      ]
+    },
+    {
+      "url": "https://us.princesspolly.com/pages/studentbeans",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://us.princesspolly.com/pages/studentbeans",
+      "companies": [
+        "Princess Polly"
+      ]
+    },
+    {
+      "url": "https://us.puma.com/us/en/puma/student-discount",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://us.puma.com/us/en/puma/student-discount",
+      "companies": [
+        "PUMA"
+      ]
+    },
+    {
+      "url": "https://www.acm.org/membership/student",
+      "classification": "restricted",
+      "status": 403,
+      "finalUrl": "https://www.acm.org/membership/student",
+      "companies": [
+        "ACM"
+      ]
+    },
+    {
+      "url": "https://www.adidas.com/us",
+      "classification": "restricted",
+      "status": 403,
+      "finalUrl": "https://www.adidas.com/us",
+      "companies": [
+        "Adidas"
+      ]
+    },
+    {
+      "url": "https://www.adobe.com/creativecloud/buy/students.html",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://www.adobe.com/creativecloud/buy/students.html",
+      "companies": [
+        "Adobe"
+      ]
+    },
+    {
+      "url": "https://www.amazon.com/amazonprime/student",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://www.amazon.com/amazonprime/student",
+      "companies": [
+        "Amazon"
+      ]
+    },
+    {
+      "url": "https://www.apple.com/us-edu/store",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://www.apple.com/us-edu/store",
+      "companies": [
+        "Apple Education Store"
+      ]
+    },
+    {
+      "url": "https://www.autodesk.com/education/edu-software/overview",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://www.autodesk.com/education/edu-software/overview",
+      "companies": [
+        "Autodesk"
+      ]
+    },
+    {
+      "url": "https://www.backmarket.com/en-us/student-discount",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://www.backmarket.com/en-us/student-discount",
+      "companies": [
+        "Back Market"
+      ]
+    },
+    {
+      "url": "https://www.bankofamerica.com/deposits/checking/advantage-banking/",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://www.bankofamerica.com/deposits/checking/advantage-banking/",
+      "companies": [
+        "Bank of America"
+      ]
+    },
+    {
+      "url": "https://www.calm.com/schools",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://www.calm.com/schools",
+      "companies": [
+        "Calm"
+      ]
+    },
+    {
+      "url": "https://www.canva.com/education/",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://www.canva.com/education/",
+      "companies": [
+        "Canva"
+      ]
+    },
+    {
+      "url": "https://www.coursera.org/",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://www.coursera.org/",
+      "companies": [
+        "Coursera"
+      ]
+    },
+    {
+      "url": "https://www.dell.com/en-us/lp/students",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://www.dell.com/en-us/lp/students",
+      "companies": [
+        "Dell"
+      ]
+    },
+    {
+      "url": "https://www.digitalocean.com/github-students",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://www.digitalocean.com/github-students",
+      "companies": [
+        "DigitalOcean"
+      ]
+    },
+    {
+      "url": "https://www.doordash.com/dashpass/student/",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://www.doordash.com/dashpass/student/",
+      "companies": [
+        "DoorDash"
+      ]
+    },
+    {
+      "url": "https://www.educative.io/github-students",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://www.educative.io/github-students",
+      "companies": [
+        "Educative"
+      ]
+    },
+    {
+      "url": "https://www.esri.com/en-us/arcgis/products/arcgis-for-student-use/overview",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://www.esri.com/en-us/arcgis/products/arcgis-for-student-use/overview",
+      "companies": [
+        "ArcGIS"
+      ]
+    },
+    {
+      "url": "https://www.expedia.com/",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://www.expedia.com/",
+      "companies": [
+        "Expedia"
+      ]
+    },
+    {
+      "url": "https://www.figma.com/education/",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://www.figma.com/education/",
+      "companies": [
+        "Figma"
+      ]
+    },
+    {
+      "url": "https://www.footlocker.com/student-discount.html",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://www.footlocker.com/student-discount.html",
+      "companies": [
+        "Foot Locker"
+      ]
+    },
+    {
+      "url": "https://www.gymshark.com/",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://www.gymshark.com/",
+      "companies": [
+        "Gymshark"
+      ]
+    },
+    {
+      "url": "https://www.headspace.com/studentplan",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://www.headspace.com/studentplan",
+      "companies": [
+        "Headspace"
+      ]
+    },
+    {
+      "url": "https://www.hulu.com/student",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://www.hulu.com/student",
+      "companies": [
+        "Hulu"
+      ]
+    },
+    {
+      "url": "https://www.ibm.com/products/spss-statistics/academic",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://www.ibm.com/products/spss-statistics",
+      "companies": [
+        "IBM SPSS"
+      ]
+    },
+    {
+      "url": "https://www.id.me/shop",
+      "classification": "restricted",
+      "status": 403,
+      "finalUrl": "https://www.id.me/shop",
+      "companies": [
+        "ID.me"
+      ]
+    },
+    {
+      "url": "https://www.ieee.org/membership/join/students.html",
+      "classification": "restricted",
+      "status": 418,
+      "finalUrl": "https://www.ieee.org/membership/join/students.html",
+      "companies": [
+        "IEEE"
+      ]
+    },
+    {
+      "url": "https://www.jetbrains.com/community/education/#students",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://www.jetbrains.com/academy/student-pack/",
+      "companies": [
+        "JetBrains"
+      ]
+    },
+    {
+      "url": "https://www.lenovo.com/us/en/education/",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://www.lenovo.com/us/en/education/",
+      "companies": [
+        "Lenovo"
+      ]
+    },
+    {
+      "url": "https://www.logitech.com/en-us/education.html",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://www.logitech.com/en-us/education.html",
+      "companies": [
+        "Logitech"
+      ]
+    },
+    {
+      "url": "https://www.mathworks.com/academia/tah-support-program/students.html",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://www.mathworks.com/academia/campus/resources.html",
+      "companies": [
+        "MATLAB"
+      ]
+    },
+    {
+      "url": "https://www.microsoft.com/en-us/education/products/office",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://www.microsoft.com/en-us/education/products/office",
+      "companies": [
+        "Microsoft"
+      ]
+    },
+    {
+      "url": "https://www.microsoft.com/en-us/education/students",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://www.microsoft.com/en-us/education/students",
+      "companies": [
+        "Microsoft 365 + LinkedIn Premium"
+      ]
+    },
+    {
+      "url": "https://www.mongodb.com/students",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://www.mongodb.com/students",
+      "companies": [
+        "MongoDB"
+      ]
+    },
+    {
+      "url": "https://www.myunidays.com/US/en-US",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://www.myunidays.com/US/en-US",
+      "companies": [
+        "UNiDAYS"
+      ]
+    },
+    {
+      "url": "https://www.myunidays.com/US/en-US/all-brands",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://www.myunidays.com/US/en-US/all-brands",
+      "companies": [
+        "1Password"
+      ]
+    },
+    {
+      "url": "https://www.myunidays.com/US/us-US/categories/lifestyle",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://www.myunidays.com/US/us-US/categories/lifestyle",
+      "companies": [
+        "Moleskine",
+        "Typo",
+        "Temu"
+      ]
+    },
+    {
+      "url": "https://www.nike.com/help/a/student-discount",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://www.nike.com/help/a/student-discount",
+      "companies": [
+        "Nike"
+      ]
+    },
+    {
+      "url": "https://www.notion.com/product/notion-for-education",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://www.notion.com/product/notion-for-education",
+      "companies": [
+        "Notion"
+      ]
+    },
+    {
+      "url": "https://www.nytimes.com/subscription/education",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://www.nytimes.com/subscription",
+      "companies": [
+        "The New York Times"
+      ]
+    },
+    {
+      "url": "https://www.perplexity.ai/hub/blog/students-get-free-perplexity-pro",
+      "classification": "restricted",
+      "status": 403,
+      "finalUrl": "https://www.perplexity.ai/hub/blog/students-get-free-perplexity-pro",
+      "companies": [
+        "Perplexity"
+      ]
+    },
+    {
+      "url": "https://www.samsung.com/us/shop/offer-program/education/",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://www.samsung.com/us/shop/offer-program/education/",
+      "companies": [
+        "Samsung"
+      ]
+    },
+    {
+      "url": "https://www.sheerid.com/shoppers/students/",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://shop.sheerid.com/offers/students-and-teachers-save-on-distraction-free-writing-tools/",
+      "companies": [
+        "SheerID"
+      ]
+    },
+    {
+      "url": "https://www.spotify.com/us/student/",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://www.spotify.com/us/student/",
+      "companies": [
+        "Spotify"
+      ]
+    },
+    {
+      "url": "https://www.studentbeans.com/us",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://www.studentbeans.com/us",
+      "companies": [
+        "Student Beans"
+      ]
+    },
+    {
+      "url": "https://www.studentuniverse.com/",
+      "classification": "restricted",
+      "status": 403,
+      "finalUrl": "https://www.studentuniverse.com/",
+      "companies": [
+        "StudentUniverse"
+      ]
+    },
+    {
+      "url": "https://www.tableau.com/academic/students",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://www.tableau.com/academic/students",
+      "companies": [
+        "Tableau"
+      ]
+    },
+    {
+      "url": "https://www.thenorthface.com/en-us/xplrpass",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://www.thenorthface.com/en-us/xplr-pass",
+      "companies": [
+        "The North Face"
+      ]
+    },
+    {
+      "url": "https://www.uhaul.com/",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://www.uhaul.com/",
+      "companies": [
+        "U-Haul"
+      ]
+    },
+    {
+      "url": "https://www.ulta.com/",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://www.ulta.com/",
+      "companies": [
+        "Ulta Beauty"
+      ]
+    },
+    {
+      "url": "https://www.united.com/en/us/fly/mileageplus/promotions/student-discount.html",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://www.united.com/en/us/fly/mileageplus/promotions/student-discount.html",
+      "companies": [
+        "United Airlines"
+      ]
+    },
+    {
+      "url": "https://www.upack.com/",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://www.upack.com/",
+      "companies": [
+        "U-Pack"
+      ]
+    },
+    {
+      "url": "https://www.urbanoutfitters.com/",
+      "classification": "restricted",
+      "status": 403,
+      "finalUrl": "https://www.urbanoutfitters.com/",
+      "companies": [
+        "Urban Outfitters"
+      ]
+    },
+    {
+      "url": "https://www.usbank.com/bank-accounts/checking-accounts/student-checking-account.html",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://www.usbank.com/bank-accounts/checking-accounts/student-checking-account.html",
+      "companies": [
+        "U.S. Bank"
+      ]
+    },
+    {
+      "url": "https://www.usselfstorage.com/",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://usselfstorage.com/",
+      "companies": [
+        "U.S. Self Storage"
+      ]
+    },
+    {
+      "url": "https://www.verizon.com/students/",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://www.verizon.com/featured/students/?CMP=OTC_CON_OTH_22222_NA_20210329_NA_NM20210050_00001",
+      "companies": [
+        "Verizon"
+      ]
+    },
+    {
+      "url": "https://www.wellsfargo.com/checking/clear-access-banking/",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://www.wellsfargo.com/checking/clear-access-banking/",
+      "companies": [
+        "Wells Fargo"
+      ]
+    },
+    {
+      "url": "https://www.wolframalpha.com/pro/",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://www.wolframalpha.com/pro/",
+      "companies": [
+        "Wolfram Alpha"
+      ]
+    },
+    {
+      "url": "https://www.wsj.com/subscriptions/students",
+      "classification": "restricted",
+      "status": 403,
+      "finalUrl": "https://www.wsj.com/subscriptions/students",
+      "companies": [
+        "The Wall Street Journal"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/premium/student",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://www.youtube.com/premium/student",
+      "companies": [
+        "YouTube"
+      ]
+    }
+  ]
+}
