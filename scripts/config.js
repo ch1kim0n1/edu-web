@@ -1,6 +1,6 @@
 export const DATA_PATH = "data/offers.json";
 export const PAGE_SIZE = 20;
-export const CONTRIBUTE_URL = "https://github.com/ch1kim0n1/edu-web";
+export const CONTRIBUTE_URL = "https://github.com/ch1kim0n1/edu-web/blob/main/CONTRIBUTING.md";
 export const ICONIFY_SCRIPT_URL = "https://code.iconify.design/iconify-icon/2.2.0/iconify-icon.min.js";
 
 export const AREA_LABELS = Object.freeze({

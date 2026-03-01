@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>edu hub</title>
+  <title>.edu-hub</title>
   <meta name="description" content="A simple, local knowledge base of student offers available with EDU emails.">
-  <link rel="icon" type="image/png" href="public/mindcore.png">
+  <link rel="icon" type="image/png" href="public/LOGO.png">
   <link rel="stylesheet" href="styles/site.css">
 </head>
 <body>
@@ -22,7 +22,7 @@
     <p class="header-center-note">Students can add new deals as they discover them.</p>
     <div class="header-actions">
       <a class="btn btn-secondary" href="last-updated.html">Last Updated</a>
-      <a class="btn btn-secondary" href="#">Hire Me</a>
+      <button id="hireMeBtn" class="btn btn-secondary" type="button">Hire Me</button>
       <a id="contributeLinkTop" class="btn btn-primary" href="#" target="_blank" rel="noopener noreferrer">Contribute</a>
       <nav class="footer-socials header-socials header-socials-right" aria-label="Header social links">
         <a
@@ -148,6 +148,45 @@
       rel="noopener noreferrer"
     >Install uBlock Origin</a>
   </aside>
+
+  <div id="resumeModal" class="resume-modal" hidden>
+    <button
+      class="resume-modal-backdrop"
+      type="button"
+      aria-label="Close resume preview"
+      data-resume-close
+    ></button>
+    <section
+      class="resume-modal-panel"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="resumeModalTitle"
+    >
+      <div class="resume-modal-header">
+        <div>
+          <p class="resume-modal-kicker">Vladislav Kondratyev</p>
+          <h2 id="resumeModalTitle">Resume</h2>
+        </div>
+        <div class="resume-modal-actions">
+          <a
+            class="btn btn-primary btn-small"
+            href="public/vlad_v7.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Open in New Tab</a>
+          <button id="resumeModalCloseBtn" class="btn btn-secondary btn-small" type="button">Close</button>
+        </div>
+      </div>
+      <div class="resume-frame-wrap">
+        <iframe
+          class="resume-frame"
+          src="public/vlad_v7.pdf#view=FitH"
+          title="Vladislav Kondratyev Resume"
+          loading="lazy"
+        ></iframe>
+      </div>
+    </section>
+  </div>
 
   <div class="mobile-action-bar">
     <button id="openFiltersBtn" class="mobile-action-btn" type="button">Filters</button>
