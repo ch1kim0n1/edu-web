@@ -2,6 +2,14 @@
 
 Static website for tracking student offers available to EDU users.
 
+## Screenshots
+
+<img width="60%" height="1889" alt="image" src="https://github.com/user-attachments/assets/bf698f73-6967-4265-ab37-e8ab4366e898" /> <img width="60%" height="1834" alt="image" src="https://github.com/user-attachments/assets/ce9b7abb-82da-4b6d-9190-85d3f896012b" /> 
+<img width="307" height="82" alt="image" src="https://github.com/user-attachments/assets/a9fad823-5a54-4c76-8cb0-e702280ef0a7" />
+
+
+
+
 ## Stack
 - HTML + CSS + vanilla JavaScript modules
 - No build step, no framework
