@@ -229,6 +229,10 @@ code {
   color: var(--text-secondary);
 }
 
+body:not(.shady-enabled) .filter-group[data-filter-group="shadyFlags"] {
+  display: none;
+}
+
 .chip-row {
   display: flex;
   flex-wrap: wrap;

@@ -22,7 +22,7 @@ import {
   renderSearchSuggestions,
   renderSortOptions,
   renderStatsStrip
-} from "./render.js";
+} from "./render.js?v=20260301a";
 import {
   clearAllFilters,
   createInitialState,
@@ -198,6 +198,10 @@ function updateShortlistButton(matchingFavoritesCount) {
 }
 
 function updateShadyToggleButton() {
+  if (elements.body) {
+    elements.body.classList.toggle("shady-enabled", state.includeShadyDeals);
+  }
+
   if (elements.shadyToggleBtn) {
     elements.shadyToggleBtn.textContent = state.includeShadyDeals ? "x" : "?";
     elements.shadyToggleBtn.classList.toggle("active", state.includeShadyDeals);
@@ -562,20 +566,25 @@ function renderActiveFilterBar() {
 }
 
 function refreshFilterControls() {
-  renderFilterControls(elements.filterGroups, state.filters, (filterKey, value) => {
-    const hadValue = state.filters[filterKey] instanceof Set && state.filters[filterKey].has(value);
-    toggleSetFilter(state, filterKey, value);
-    if (filterKey === "shadyFlags" && value === "shady" && !hadValue) {
-      setIncludeShadyDeals(state, true);
-    }
-    resetPage(state);
-    refreshFilterControls();
-    recomputeAndRender();
+  renderFilterControls(
+    elements.filterGroups,
+    state.filters,
+    (filterKey, value) => {
+      const hadValue = state.filters[filterKey] instanceof Set && state.filters[filterKey].has(value);
+      toggleSetFilter(state, filterKey, value);
+      if (filterKey === "shadyFlags" && value === "shady" && !hadValue) {
+        setIncludeShadyDeals(state, true);
+      }
+      resetPage(state);
+      refreshFilterControls();
+      recomputeAndRender();
 
-    if (isMobileViewport()) {
-      closeFiltersDrawer();
-    }
-  });
+      if (isMobileViewport()) {
+        closeFiltersDrawer();
+      }
+    },
+    { showShadyFilter: state.includeShadyDeals }
+  );
 }
 
 function clearFilterState() {
@@ -724,8 +733,8 @@ function attachEvents() {
       setIncludeShadyDeals(state, nextEnabled);
       if (!nextEnabled) {
         state.filters.shadyFlags.delete("shady");
-        refreshFilterControls();
       }
+      refreshFilterControls();
       resetPage(state);
       recomputeAndRender();
     });

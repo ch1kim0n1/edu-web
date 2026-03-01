@@ -409,12 +409,22 @@ export function renderSortOptions(selectElement, selectedValue) {
   }
 }
 
-export function renderFilterControls(container, filters, onToggle) {
+export function renderFilterControls(
+  container,
+  filters,
+  onToggle,
+  { showShadyFilter = false } = {}
+) {
   container.innerHTML = "";
 
   for (const group of FILTER_GROUPS) {
+    if (group.stateKey === "shadyFlags" && !showShadyFilter) {
+      continue;
+    }
+
     const section = document.createElement("section");
     section.className = "filter-group";
+    section.dataset.filterGroup = group.stateKey;
 
     const heading = document.createElement("h3");
     heading.textContent = group.heading;
