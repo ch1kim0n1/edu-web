@@ -1,58 +1,13 @@
 {
-  "generatedAt": "2026-03-16T07:31:38Z",
+  "generatedAt": "2026-03-23T07:24:19Z",
   "summary": {
-    "total": 90,
-    "working": 61,
-    "restricted": 20,
-    "broken": 5,
+    "total": 85,
+    "working": 60,
+    "restricted": 21,
+    "broken": 0,
     "timeout": 4
   },
   "results": [
-    {
-      "url": "https://support.airtable.com/docs/airtable-for-students",
-      "classification": "broken",
-      "status": 404,
-      "finalUrl": "https://support.airtable.com/docs/airtable-for-students",
-      "companies": [
-        "Airtable"
-      ]
-    },
-    {
-      "url": "https://www.lenovo.com/us/en/education/",
-      "classification": "broken",
-      "status": 404,
-      "finalUrl": "https://www.lenovo.com/us/en/education/",
-      "companies": [
-        "Lenovo"
-      ]
-    },
-    {
-      "url": "https://www.levi.com/US/en_US/features/student-discount",
-      "classification": "broken",
-      "status": 404,
-      "finalUrl": "https://www.levi.com/US/en_US/features/student-discount",
-      "companies": [
-        "Levi's"
-      ]
-    },
-    {
-      "url": "https://www.lucid.co/lucidspark/education/students",
-      "classification": "broken",
-      "status": 404,
-      "finalUrl": "https://lucid.co/lucidspark/education/students",
-      "companies": [
-        "Lucidchart"
-      ]
-    },
-    {
-      "url": "https://www.wolframalpha.com/pro/",
-      "classification": "broken",
-      "status": 404,
-      "finalUrl": "https://www.wolframalpha.com/pro/",
-      "companies": [
-        "Wolfram Alpha"
-      ]
-    },
     {
       "url": "https://subscribe.washingtonpost.com/student",
       "classification": "timeout",
@@ -244,6 +199,15 @@
       "finalUrl": "https://www.thenorthface.com/en-us/xplrpass",
       "companies": [
         "The North Face"
+      ]
+    },
+    {
+      "url": "https://www.ulta.com/",
+      "classification": "restricted",
+      "status": 403,
+      "finalUrl": "https://www.ulta.com/",
+      "companies": [
+        "Ulta Beauty"
       ]
     },
     {
@@ -769,15 +733,6 @@
       "finalUrl": "https://www.uhaul.com/",
       "companies": [
         "U-Haul"
-      ]
-    },
-    {
-      "url": "https://www.ulta.com/",
-      "classification": "working",
-      "status": 200,
-      "finalUrl": "https://www.ulta.com/",
-      "companies": [
-        "Ulta Beauty"
       ]
     },
     {
