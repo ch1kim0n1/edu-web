@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-04-06T07:57:59Z",
+  "generatedAt": "2026-04-13T08:17:26Z",
   "summary": {
     "total": 85,
-    "working": 59,
-    "restricted": 22,
+    "working": 60,
+    "restricted": 21,
     "broken": 0,
     "timeout": 4
   },
@@ -208,15 +208,6 @@
       "finalUrl": "https://www.thenorthface.com/en-us/xplrpass",
       "companies": [
         "The North Face"
-      ]
-    },
-    {
-      "url": "https://www.ulta.com/",
-      "classification": "restricted",
-      "status": 403,
-      "finalUrl": "https://www.ulta.com/",
-      "companies": [
-        "Ulta Beauty"
       ]
     },
     {
@@ -733,6 +724,15 @@
       "finalUrl": "https://www.uhaul.com/",
       "companies": [
         "U-Haul"
+      ]
+    },
+    {
+      "url": "https://www.ulta.com/",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://www.ulta.com/",
+      "companies": [
+        "Ulta Beauty"
       ]
     },
     {
