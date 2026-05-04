@@ -1,13 +1,22 @@
 {
-  "generatedAt": "2026-04-27T08:39:14Z",
+  "generatedAt": "2026-05-04T08:41:23Z",
   "summary": {
     "total": 85,
-    "working": 61,
-    "restricted": 20,
-    "broken": 0,
+    "working": 65,
+    "restricted": 15,
+    "broken": 1,
     "timeout": 4
   },
   "results": [
+    {
+      "url": "https://www.perplexity.ai/hub/blog/students-get-free-perplexity-pro",
+      "classification": "broken",
+      "status": 404,
+      "finalUrl": "https://www.perplexity.ai/hub/blog/students-get-free-perplexity-pro",
+      "companies": [
+        "Perplexity"
+      ]
+    },
     {
       "url": "https://subscribe.washingtonpost.com/student",
       "classification": "timeout",
@@ -112,24 +121,6 @@
       ]
     },
     {
-      "url": "https://www.canva.com/education/",
-      "classification": "restricted",
-      "status": 403,
-      "finalUrl": "https://www.canva.com/education/",
-      "companies": [
-        "Canva"
-      ]
-    },
-    {
-      "url": "https://www.doordash.com/dashpass/student/",
-      "classification": "restricted",
-      "status": 403,
-      "finalUrl": "https://www.doordash.com/dashpass/student/",
-      "companies": [
-        "DoorDash"
-      ]
-    },
-    {
       "url": "https://www.footlocker.com/student-discount.html",
       "classification": "restricted",
       "status": 403,
@@ -175,24 +166,6 @@
       ]
     },
     {
-      "url": "https://www.perplexity.ai/hub/blog/students-get-free-perplexity-pro",
-      "classification": "restricted",
-      "status": 403,
-      "finalUrl": "https://www.perplexity.ai/hub/blog/students-get-free-perplexity-pro",
-      "companies": [
-        "Perplexity"
-      ]
-    },
-    {
-      "url": "https://www.studentuniverse.com/",
-      "classification": "restricted",
-      "status": 403,
-      "finalUrl": "https://www.studentuniverse.com/",
-      "companies": [
-        "StudentUniverse"
-      ]
-    },
-    {
       "url": "https://www.thenorthface.com/en-us/xplrpass",
       "classification": "restricted",
       "status": 403,
@@ -208,15 +181,6 @@
       "finalUrl": "https://www.urbanoutfitters.com/",
       "companies": [
         "Urban Outfitters"
-      ]
-    },
-    {
-      "url": "https://www.usselfstorage.com/",
-      "classification": "restricted",
-      "status": 403,
-      "finalUrl": "https://www.usselfstorage.com/",
-      "companies": [
-        "U.S. Self Storage"
       ]
     },
     {
@@ -437,6 +401,15 @@
       ]
     },
     {
+      "url": "https://www.canva.com/education/",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://www.canva.com/education/",
+      "companies": [
+        "Canva"
+      ]
+    },
+    {
       "url": "https://www.coursera.org/",
       "classification": "working",
       "status": 200,
@@ -470,6 +443,15 @@
       "finalUrl": "https://www.digitalocean.com/github-students",
       "companies": [
         "DigitalOcean"
+      ]
+    },
+    {
+      "url": "https://www.doordash.com/dashpass/student/",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://www.doordash.com/dashpass/student/",
+      "companies": [
+        "DoorDash"
       ]
     },
     {
@@ -709,6 +691,15 @@
       ]
     },
     {
+      "url": "https://www.studentuniverse.com/",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://home.byojet.com/student-universe?referrer=StudentUniverse_US",
+      "companies": [
+        "StudentUniverse"
+      ]
+    },
+    {
       "url": "https://www.tableau.com/academic/students",
       "classification": "working",
       "status": 200,
@@ -751,6 +742,15 @@
       "finalUrl": "https://www.usbank.com/bank-accounts/checking-accounts/student-checking-account.html",
       "companies": [
         "U.S. Bank"
+      ]
+    },
+    {
+      "url": "https://www.usselfstorage.com/",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://usselfstorage.com/",
+      "companies": [
+        "U.S. Self Storage"
       ]
     },
     {

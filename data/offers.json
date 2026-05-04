@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "lastUpdated": "2026-04-27",
+    "lastUpdated": "2026-05-04",
     "version": "1.2.0",
     "source": "Open Source Curation"
   },
@@ -1054,21 +1054,6 @@
       "shortDescription": "Fashion discounts for students are promoted through Princess Polly's verification page.",
       "eligibilityNotes": "Student verification through Student Beans is required to unlock active code offers.",
       "officialUrl": "https://us.princesspolly.com/pages/studentbeans",
-      "addedDate": "2026-02-28"
-    },
-    {
-      "id": "perplexity-pro-student-year",
-      "companyName": "Perplexity",
-      "logoIcon": "simple-icons:perplexity",
-      "area": "productivity",
-      "offerType": "deal",
-      "pricingModel": "free",
-      "discountValue": null,
-      "discountUnit": "none",
-      "valueText": "Free 1 year of Perplexity Pro (student campaign)",
-      "shortDescription": "Student campaign for one year of Perplexity Pro access.",
-      "eligibilityNotes": "Availability is campaign-based and may require student verification or partner redemption.",
-      "officialUrl": "https://www.perplexity.ai/hub/blog/students-get-free-perplexity-pro",
       "addedDate": "2026-02-28"
     },
     {
