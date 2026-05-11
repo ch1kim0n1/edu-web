@@ -1,22 +1,13 @@
 {
-  "generatedAt": "2026-05-04T08:41:23Z",
+  "generatedAt": "2026-05-11T09:55:29Z",
   "summary": {
-    "total": 85,
+    "total": 84,
     "working": 65,
     "restricted": 15,
-    "broken": 1,
+    "broken": 0,
     "timeout": 4
   },
   "results": [
-    {
-      "url": "https://www.perplexity.ai/hub/blog/students-get-free-perplexity-pro",
-      "classification": "broken",
-      "status": 404,
-      "finalUrl": "https://www.perplexity.ai/hub/blog/students-get-free-perplexity-pro",
-      "companies": [
-        "Perplexity"
-      ]
-    },
     {
       "url": "https://subscribe.washingtonpost.com/student",
       "classification": "timeout",
