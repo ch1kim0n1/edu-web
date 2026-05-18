@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-05-11T09:55:29Z",
+  "generatedAt": "2026-05-18T10:19:49Z",
   "summary": {
     "total": 84,
-    "working": 65,
-    "restricted": 15,
+    "working": 64,
+    "restricted": 16,
     "broken": 0,
     "timeout": 4
   },
@@ -83,6 +83,16 @@
       "companies": [
         "Adidas"
       ]
+    },
+    {
+      "url": "https://www.amazon.com/amazonprime/student",
+      "classification": "restricted",
+      "status": null,
+      "finalUrl": "https://www.amazon.com/amazonprime/student",
+      "companies": [
+        "Amazon"
+      ],
+      "error": "HTTPSConnectionPool(host='www.amazon.com', port=443): Max retries exceeded with url: /amazonprime/student (Caused by Res"
     },
     {
       "url": "https://www.amazon.com/gp/help/customer/display.html?nodeId=G8PRQ47B8YJ9Q8QK",
@@ -344,15 +354,6 @@
       "finalUrl": "https://www.adobe.com/creativecloud/buy/students.html",
       "companies": [
         "Adobe"
-      ]
-    },
-    {
-      "url": "https://www.amazon.com/amazonprime/student",
-      "classification": "working",
-      "status": 200,
-      "finalUrl": "https://www.amazon.com/amazonprime/student",
-      "companies": [
-        "Amazon"
       ]
     },
     {
