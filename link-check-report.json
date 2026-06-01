@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-05-25T10:23:58Z",
+  "generatedAt": "2026-06-01T11:50:08Z",
   "summary": {
     "total": 84,
-    "working": 65,
-    "restricted": 15,
+    "working": 64,
+    "restricted": 16,
     "broken": 0,
     "timeout": 4
   },
@@ -82,6 +82,15 @@
       "finalUrl": "https://www.adidas.com/us",
       "companies": [
         "Adidas"
+      ]
+    },
+    {
+      "url": "https://www.amazon.com/amazonprime/student",
+      "classification": "restricted",
+      "status": 429,
+      "finalUrl": "https://www.amazon.com/amazonprime/student",
+      "companies": [
+        "Amazon"
       ]
     },
     {
@@ -344,15 +353,6 @@
       "finalUrl": "https://www.adobe.com/education/students/creativecloud.html",
       "companies": [
         "Adobe"
-      ]
-    },
-    {
-      "url": "https://www.amazon.com/amazonprime/student",
-      "classification": "working",
-      "status": 200,
-      "finalUrl": "https://www.amazon.com/amazonprime/student",
-      "companies": [
-        "Amazon"
       ]
     },
     {
