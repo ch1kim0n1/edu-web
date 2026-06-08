@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-06-01T11:50:08Z",
+  "generatedAt": "2026-06-08T11:11:54Z",
   "summary": {
     "total": 84,
-    "working": 64,
-    "restricted": 16,
+    "working": 63,
+    "restricted": 17,
     "broken": 0,
     "timeout": 4
   },
@@ -118,6 +118,15 @@
       "finalUrl": "https://www.autodesk.com/education/edu-software/overview",
       "companies": [
         "Autodesk"
+      ]
+    },
+    {
+      "url": "https://www.bankofamerica.com/deposits/checking/advantage-banking/",
+      "classification": "restricted",
+      "status": 403,
+      "finalUrl": "https://www.bankofamerica.com/deposits/checking/advantage-banking/",
+      "companies": [
+        "Bank of America"
       ]
     },
     {
@@ -350,7 +359,7 @@
       "url": "https://www.adobe.com/creativecloud/buy/students.html",
       "classification": "working",
       "status": 200,
-      "finalUrl": "https://www.adobe.com/education/students/creativecloud.html",
+      "finalUrl": "https://www.adobe.com/education/students/creativecloud.html?sdid=2K4PC5GG&mv=social&mv2=paidsoc&ad_id=1856416355674370&adset_id=1853696409822226&campaign_id=1852337400077490&utm_source=tiktok&utm_medium=paid&utm_id=1852337400077490&utm_campaign=WMAdobe_CC_PRO_Web_AMERxNA_NA-Evergreen-LeadGen_Buy_CCAcquisition_ROI_26.APF.CRE.014_Social&ttclid=E_C_P_Ct4BPhck-toR0C1qlM95wl5FEnyuUtXgRsazip5S54tfYYtZ_V3hYDVuG6xxEFPe9mavBFUi8cJCjyMUTCKw7zXrwxFK2MTSyNu33tgD_00QhZGr-gwYOGG4YEeJQtUuXwkEjSzHy6UPl0liMMmBDG1duQH-S3kPHEPjTj1mM0rUdEoHk4clSJ0oJyOZh_fB9o7KruBIqgLS4iF8pBtGNhhTIvuLEZnF_TbFm2TS2ia88zruTIiw92rqRVOAT_fNul6-IsjUVWrfwcavEEP1HVNAObzgKZIO5qnmtjICDH8yEgR2Mi4w",
       "companies": [
         "Adobe"
       ]
@@ -371,15 +380,6 @@
       "finalUrl": "https://www.backmarket.com/en-us/student-discount",
       "companies": [
         "Back Market"
-      ]
-    },
-    {
-      "url": "https://www.bankofamerica.com/deposits/checking/advantage-banking/",
-      "classification": "working",
-      "status": 200,
-      "finalUrl": "https://www.bankofamerica.com/deposits/checking/advantage-banking/",
-      "companies": [
-        "Bank of America"
       ]
     },
     {
