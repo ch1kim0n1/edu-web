@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-06-22T12:18:15Z",
+  "generatedAt": "2026-06-29T11:14:36Z",
   "summary": {
     "total": 84,
-    "working": 64,
-    "restricted": 16,
+    "working": 61,
+    "restricted": 19,
     "broken": 0,
     "timeout": 4
   },
@@ -47,6 +47,25 @@
         "United Airlines"
       ],
       "error": "HTTPSConnectionPool(host='www.united.com', port=443): Max retries exceeded with url: /en/us/fly/mileageplus/promotions/s"
+    },
+    {
+      "url": "https://account.chase.com/consumer/banking/student-checking",
+      "classification": "restricted",
+      "status": 403,
+      "finalUrl": "https://account.chase.com/core/install.php",
+      "companies": [
+        "Chase"
+      ]
+    },
+    {
+      "url": "https://evernote.com/students",
+      "classification": "restricted",
+      "status": null,
+      "finalUrl": "https://evernote.com/students",
+      "companies": [
+        "Evernote"
+      ],
+      "error": "HTTPSConnectionPool(host='evernote.com', port=443): Max retries exceeded with url: /students (Caused by ResponseError('t"
     },
     {
       "url": "https://nordvpn.com/student-discount/",
@@ -118,6 +137,15 @@
       "finalUrl": "https://www.autodesk.com/education/edu-software/overview",
       "companies": [
         "Autodesk"
+      ]
+    },
+    {
+      "url": "https://www.bankofamerica.com/deposits/checking/advantage-banking/",
+      "classification": "restricted",
+      "status": 403,
+      "finalUrl": "https://www.bankofamerica.com/deposits/checking/advantage-banking/",
+      "companies": [
+        "Bank of America"
       ]
     },
     {
@@ -193,15 +221,6 @@
       ]
     },
     {
-      "url": "https://account.chase.com/consumer/banking/student-checking",
-      "classification": "working",
-      "status": 200,
-      "finalUrl": "https://www.chase.com/digital/resources/oops.html",
-      "companies": [
-        "Chase"
-      ]
-    },
-    {
       "url": "https://azure.microsoft.com/en-us/free/students/",
       "classification": "working",
       "status": 200,
@@ -254,15 +273,6 @@
       "finalUrl": "https://education.github.com/pack",
       "companies": [
         "Namecheap"
-      ]
-    },
-    {
-      "url": "https://evernote.com/students",
-      "classification": "working",
-      "status": 200,
-      "finalUrl": "https://evernote.com/unidays",
-      "companies": [
-        "Evernote"
       ]
     },
     {
@@ -350,7 +360,7 @@
       "url": "https://www.adobe.com/creativecloud/buy/students.html",
       "classification": "working",
       "status": 200,
-      "finalUrl": "https://www.adobe.com/education/students/creativecloud.html?sdid=2K4PC5GG&mv=social&mv2=paidsoc&ad_id=1868689562629378&adset_id=1868689560645906&campaign_id=1852337400077490&utm_source=tiktok&utm_medium=paid&utm_id=1852337400077490&utm_campaign=WMAdobe_CC_PRO_Web_AMERxNA_NA-Evergreen-LeadGen_Buy_CCAcquisition_ROI_26.APF.CRE.014_Social",
+      "finalUrl": "https://www.adobe.com/education/students/creativecloud.html",
       "companies": [
         "Adobe"
       ]
@@ -371,15 +381,6 @@
       "finalUrl": "https://www.backmarket.com/en-us/student-discount",
       "companies": [
         "Back Market"
-      ]
-    },
-    {
-      "url": "https://www.bankofamerica.com/deposits/checking/advantage-banking/",
-      "classification": "working",
-      "status": 200,
-      "finalUrl": "https://www.bankofamerica.com/deposits/checking/advantage-banking/",
-      "companies": [
-        "Bank of America"
       ]
     },
     {
