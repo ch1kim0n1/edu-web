@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-06-29T11:14:36Z",
+  "generatedAt": "2026-07-06T10:52:21Z",
   "summary": {
     "total": 84,
-    "working": 61,
-    "restricted": 19,
+    "working": 65,
+    "restricted": 15,
     "broken": 0,
     "timeout": 4
   },
@@ -49,25 +49,6 @@
       "error": "HTTPSConnectionPool(host='www.united.com', port=443): Max retries exceeded with url: /en/us/fly/mileageplus/promotions/s"
     },
     {
-      "url": "https://account.chase.com/consumer/banking/student-checking",
-      "classification": "restricted",
-      "status": 403,
-      "finalUrl": "https://account.chase.com/core/install.php",
-      "companies": [
-        "Chase"
-      ]
-    },
-    {
-      "url": "https://evernote.com/students",
-      "classification": "restricted",
-      "status": null,
-      "finalUrl": "https://evernote.com/students",
-      "companies": [
-        "Evernote"
-      ],
-      "error": "HTTPSConnectionPool(host='evernote.com', port=443): Max retries exceeded with url: /students (Caused by ResponseError('t"
-    },
-    {
       "url": "https://nordvpn.com/student-discount/",
       "classification": "restricted",
       "status": 403,
@@ -104,15 +85,6 @@
       ]
     },
     {
-      "url": "https://www.amazon.com/amazonprime/student",
-      "classification": "restricted",
-      "status": 429,
-      "finalUrl": "https://www.amazon.com/amazonprime/student",
-      "companies": [
-        "Amazon"
-      ]
-    },
-    {
       "url": "https://www.amazon.com/gp/help/customer/display.html?nodeId=G8PRQ47B8YJ9Q8QK",
       "classification": "restricted",
       "status": 403,
@@ -137,15 +109,6 @@
       "finalUrl": "https://www.autodesk.com/education/edu-software/overview",
       "companies": [
         "Autodesk"
-      ]
-    },
-    {
-      "url": "https://www.bankofamerica.com/deposits/checking/advantage-banking/",
-      "classification": "restricted",
-      "status": 403,
-      "finalUrl": "https://www.bankofamerica.com/deposits/checking/advantage-banking/",
-      "companies": [
-        "Bank of America"
       ]
     },
     {
@@ -221,6 +184,15 @@
       ]
     },
     {
+      "url": "https://account.chase.com/consumer/banking/student-checking",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://www.chase.com/digital/resources/oops.html",
+      "companies": [
+        "Chase"
+      ]
+    },
+    {
       "url": "https://azure.microsoft.com/en-us/free/students/",
       "classification": "working",
       "status": 200,
@@ -273,6 +245,15 @@
       "finalUrl": "https://education.github.com/pack",
       "companies": [
         "Namecheap"
+      ]
+    },
+    {
+      "url": "https://evernote.com/students",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://evernote.com/unidays",
+      "companies": [
+        "Evernote"
       ]
     },
     {
@@ -360,9 +341,18 @@
       "url": "https://www.adobe.com/creativecloud/buy/students.html",
       "classification": "working",
       "status": 200,
-      "finalUrl": "https://www.adobe.com/education/students/creativecloud.html",
+      "finalUrl": "https://www.adobe.com/education/students/creativecloud.html?sdid=2K4PC5GG&mv=social&mv2=paidsoc&ad_id=1866544412303505&adset_id=1866543638036769&campaign_id=1859568519664818&ttclid=E_C_P_CuABNVFKvW7bJovX0YUNA_gH0H2i6_wvSGfr6NPGHnpjvEIf6Tx-3gSckNgXsMbkeNlAR1M9WfG3RkvhQf-xHDTaj0Sr1DhB-OnQTE0_ZcWeE4t7CmdqNfKAFCaQgQr2vaPQ6K6FR2Q9rdnyVrRuHH6ty8xZ-H4o7nyl4x8vnOzYbdnKhUTD-E7KSgnFtGBNnX0h-AVahx1tRGXkDAR5vUeudmj3t2aFOT7cGZiNJ1Vh5nOpexjIByey71RlzIPI53of1C_QoI0KvCkyO0DwTxAC7x8A3RotU1l4d83Va8OXJNESBHYyLjA",
       "companies": [
         "Adobe"
+      ]
+    },
+    {
+      "url": "https://www.amazon.com/amazonprime/student",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://www.amazon.com/amazonprime/student",
+      "companies": [
+        "Amazon"
       ]
     },
     {
@@ -381,6 +371,15 @@
       "finalUrl": "https://www.backmarket.com/en-us/student-discount",
       "companies": [
         "Back Market"
+      ]
+    },
+    {
+      "url": "https://www.bankofamerica.com/deposits/checking/advantage-banking/",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://www.bankofamerica.com/deposits/checking/advantage-banking/",
+      "companies": [
+        "Bank of America"
       ]
     },
     {
