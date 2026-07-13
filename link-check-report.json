@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-06T10:52:21Z",
+  "generatedAt": "2026-07-13T09:41:02Z",
   "summary": {
     "total": 84,
     "working": 65,
@@ -341,7 +341,7 @@
       "url": "https://www.adobe.com/creativecloud/buy/students.html",
       "classification": "working",
       "status": 200,
-      "finalUrl": "https://www.adobe.com/education/students/creativecloud.html?sdid=2K4PC5GG&mv=social&mv2=paidsoc&ad_id=1866544412303505&adset_id=1866543638036769&campaign_id=1859568519664818&ttclid=E_C_P_CuABNVFKvW7bJovX0YUNA_gH0H2i6_wvSGfr6NPGHnpjvEIf6Tx-3gSckNgXsMbkeNlAR1M9WfG3RkvhQf-xHDTaj0Sr1DhB-OnQTE0_ZcWeE4t7CmdqNfKAFCaQgQr2vaPQ6K6FR2Q9rdnyVrRuHH6ty8xZ-H4o7nyl4x8vnOzYbdnKhUTD-E7KSgnFtGBNnX0h-AVahx1tRGXkDAR5vUeudmj3t2aFOT7cGZiNJ1Vh5nOpexjIByey71RlzIPI53of1C_QoI0KvCkyO0DwTxAC7x8A3RotU1l4d83Va8OXJNESBHYyLjA",
+      "finalUrl": "https://www.adobe.com/education/students/creativecloud.html",
       "companies": [
         "Adobe"
       ]
