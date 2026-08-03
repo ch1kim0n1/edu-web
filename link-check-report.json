@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-07-27T10:05:19Z",
+  "generatedAt": "2026-08-03T09:59:23Z",
   "summary": {
     "total": 84,
-    "working": 63,
-    "restricted": 17,
+    "working": 65,
+    "restricted": 15,
     "broken": 0,
     "timeout": 4
   },
@@ -85,15 +85,6 @@
       ]
     },
     {
-      "url": "https://www.amazon.com/amazonprime/student",
-      "classification": "restricted",
-      "status": 429,
-      "finalUrl": "https://www.amazon.com/amazonprime/student",
-      "companies": [
-        "Amazon"
-      ]
-    },
-    {
       "url": "https://www.amazon.com/gp/help/customer/display.html?nodeId=G8PRQ47B8YJ9Q8QK",
       "classification": "restricted",
       "status": 403,
@@ -121,15 +112,6 @@
       ]
     },
     {
-      "url": "https://www.backmarket.com/en-us/student-discount",
-      "classification": "restricted",
-      "status": 403,
-      "finalUrl": "https://www.backmarket.com/testchallengepage?next=https%3A%2F%2Fwww.backmarket.com%2Fen-us%2Fstudent-discount",
-      "companies": [
-        "Back Market"
-      ]
-    },
-    {
       "url": "https://www.footlocker.com/student-discount.html",
       "classification": "restricted",
       "status": 403,
@@ -137,16 +119,6 @@
       "companies": [
         "Foot Locker"
       ]
-    },
-    {
-      "url": "https://www.headspace.com/studentplan",
-      "classification": "restricted",
-      "status": null,
-      "finalUrl": "https://www.headspace.com/studentplan",
-      "companies": [
-        "Headspace"
-      ],
-      "error": "HTTPSConnectionPool(host='www.headspace.com', port=443): Max retries exceeded with url: /studentplan (Caused by Response"
     },
     {
       "url": "https://www.id.me/shop",
@@ -182,6 +154,15 @@
       "finalUrl": "https://www.thenorthface.com/en-us/xplrpass",
       "companies": [
         "The North Face"
+      ]
+    },
+    {
+      "url": "https://www.ulta.com/",
+      "classification": "restricted",
+      "status": 403,
+      "finalUrl": "https://www.ulta.com/",
+      "companies": [
+        "Ulta Beauty"
       ]
     },
     {
@@ -360,9 +341,18 @@
       "url": "https://www.adobe.com/creativecloud/buy/students.html",
       "classification": "working",
       "status": 200,
-      "finalUrl": "https://www.adobe.com/education/students/creativecloud.html?sdid=2K4PC5GG&mv=social&mv2=paidsoc&ad_id=1868266879104178&adset_id=1863297093030002&campaign_id=1853633915885682&ttclid=E_C_P_CuIB8N2qoyiK0HoVBbPowUrPrmRQ8JrIEDfEAPafzBA6xMB6TosrBIuCRE0vD-jmQ-DL3f5ccqarJL5kSQM1647K9NuDJIaZrBV6cvF3_axLhVNkaY7X8R24BcBi_Tb9kGflnB7drJevz9FDpMW73oliTDG8Af6AfigzzXI_RjKaxz-T1W5BPv5JMJmNIxFgIKvbsPHG8p0i7Mkb8J-NViwvjAV1rE7sjlVmJpJmc6reQ2rAzpAi4caZR9Zpm0N_Dlio55eaqRk4gdLy1vtAo4pmJnKE2xKQ4g-BIe6bk1xAfC3HCBIEdjIuMA",
+      "finalUrl": "https://www.adobe.com/education/students/creativecloud.html?sdid=LCDWTGQP&mv=social&mv2=paidsoc&ad_id=%7B%7Bad.id%7D%7D&adset_id=%7B%7Badset.id%7D%7D&campaign_id=%7B%7Bcampaign.id%7D%7D&fbclid=PAcGRvZgJmZGlkFlC7IBJdFiocM1JsoBG4QprheW_RCApleHRuA2FlbQEwAGFkaWQBqzjSgtq5wXNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABp8mLR7cSPuEwP33L0-uniQnUITqRWPmr4iqA6valm5IYDdFvhKZOG9m5QV6k_aem_evbFj-3EZjqh8lWTSXugHw",
       "companies": [
         "Adobe"
+      ]
+    },
+    {
+      "url": "https://www.amazon.com/amazonprime/student",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://www.amazon.com/amazonprime/student",
+      "companies": [
+        "Amazon"
       ]
     },
     {
@@ -372,6 +362,15 @@
       "finalUrl": "https://www.apple.com/us-edu/store",
       "companies": [
         "Apple Education Store"
+      ]
+    },
+    {
+      "url": "https://www.backmarket.com/en-us/student-discount",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://www.backmarket.com/en-us/student-discount",
+      "companies": [
+        "Back Market"
       ]
     },
     {
@@ -489,6 +488,15 @@
       "finalUrl": "https://www.gymshark.com/",
       "companies": [
         "Gymshark"
+      ]
+    },
+    {
+      "url": "https://www.headspace.com/studentplan",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://www.headspace.com/studentplan",
+      "companies": [
+        "Headspace"
       ]
     },
     {
@@ -707,15 +715,6 @@
       "finalUrl": "https://www.uhaul.com/",
       "companies": [
         "U-Haul"
-      ]
-    },
-    {
-      "url": "https://www.ulta.com/",
-      "classification": "working",
-      "status": 200,
-      "finalUrl": "https://www.ulta.com/",
-      "companies": [
-        "Ulta Beauty"
       ]
     },
     {
