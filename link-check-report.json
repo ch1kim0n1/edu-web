@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-03T09:59:23Z",
+  "generatedAt": "2026-08-10T07:55:44Z",
   "summary": {
     "total": 84,
-    "working": 65,
+    "working": 66,
     "restricted": 15,
     "broken": 0,
-    "timeout": 4
+    "timeout": 3
   },
   "results": [
     {
@@ -17,16 +17,6 @@
         "The Washington Post"
       ],
       "error": "HTTPSConnectionPool(host='subscribe.washingtonpost.com', port=443): Max retries exceeded with url: /student (Caused by R"
-    },
-    {
-      "url": "https://www.ansys.com/academic/students",
-      "classification": "timeout",
-      "status": null,
-      "finalUrl": "https://www.ansys.com/academic/students",
-      "companies": [
-        "ANSYS"
-      ],
-      "error": "HTTPSConnectionPool(host='www.ansys.com', port=443): Max retries exceeded with url: /academic/students (Caused by ReadTi"
     },
     {
       "url": "https://www.asos.com/us/discover/student-discount/",
@@ -157,15 +147,6 @@
       ]
     },
     {
-      "url": "https://www.ulta.com/",
-      "classification": "restricted",
-      "status": 403,
-      "finalUrl": "https://www.ulta.com/",
-      "companies": [
-        "Ulta Beauty"
-      ]
-    },
-    {
       "url": "https://www.urbanoutfitters.com/",
       "classification": "restricted",
       "status": 403,
@@ -173,6 +154,16 @@
       "companies": [
         "Urban Outfitters"
       ]
+    },
+    {
+      "url": "https://www.usselfstorage.com/",
+      "classification": "restricted",
+      "status": null,
+      "finalUrl": "https://www.usselfstorage.com/",
+      "companies": [
+        "U.S. Self Storage"
+      ],
+      "error": "HTTPSConnectionPool(host='www.usselfstorage.com', port=443): Max retries exceeded with url: / (Caused by ResponseError('"
     },
     {
       "url": "https://www.wsj.com/subscriptions/students",
@@ -341,7 +332,7 @@
       "url": "https://www.adobe.com/creativecloud/buy/students.html",
       "classification": "working",
       "status": 200,
-      "finalUrl": "https://www.adobe.com/education/students/creativecloud.html?sdid=LCDWTGQP&mv=social&mv2=paidsoc&ad_id=%7B%7Bad.id%7D%7D&adset_id=%7B%7Badset.id%7D%7D&campaign_id=%7B%7Bcampaign.id%7D%7D&fbclid=PAcGRvZgJmZGlkFlC7IBJdFiocM1JsoBG4QprheW_RCApleHRuA2FlbQEwAGFkaWQBqzjSgtq5wXNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABp8mLR7cSPuEwP33L0-uniQnUITqRWPmr4iqA6valm5IYDdFvhKZOG9m5QV6k_aem_evbFj-3EZjqh8lWTSXugHw",
+      "finalUrl": "https://www.adobe.com/education/students/creativecloud.html",
       "companies": [
         "Adobe"
       ]
@@ -353,6 +344,15 @@
       "finalUrl": "https://www.amazon.com/amazonprime/student",
       "companies": [
         "Amazon"
+      ]
+    },
+    {
+      "url": "https://www.ansys.com/academic/students",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://ansys.synopsys.com/academic/students",
+      "companies": [
+        "ANSYS"
       ]
     },
     {
@@ -718,6 +718,15 @@
       ]
     },
     {
+      "url": "https://www.ulta.com/",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://www.ulta.com/",
+      "companies": [
+        "Ulta Beauty"
+      ]
+    },
+    {
       "url": "https://www.upack.com/",
       "classification": "working",
       "status": 200,
@@ -733,15 +742,6 @@
       "finalUrl": "https://www.usbank.com/bank-accounts/checking-accounts/student-checking-account.html",
       "companies": [
         "U.S. Bank"
-      ]
-    },
-    {
-      "url": "https://www.usselfstorage.com/",
-      "classification": "working",
-      "status": 200,
-      "finalUrl": "https://usselfstorage.com/",
-      "companies": [
-        "U.S. Self Storage"
       ]
     },
     {
