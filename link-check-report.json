@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-10T07:55:44Z",
+  "generatedAt": "2026-08-17T07:07:54Z",
   "summary": {
     "total": 84,
     "working": 66,
@@ -72,6 +72,15 @@
       "finalUrl": "https://www.adidas.com/us",
       "companies": [
         "Adidas"
+      ]
+    },
+    {
+      "url": "https://www.amazon.com/amazonprime/student",
+      "classification": "restricted",
+      "status": 429,
+      "finalUrl": "https://www.amazon.com/amazonprime/student",
+      "companies": [
+        "Amazon"
       ]
     },
     {
@@ -154,16 +163,6 @@
       "companies": [
         "Urban Outfitters"
       ]
-    },
-    {
-      "url": "https://www.usselfstorage.com/",
-      "classification": "restricted",
-      "status": null,
-      "finalUrl": "https://www.usselfstorage.com/",
-      "companies": [
-        "U.S. Self Storage"
-      ],
-      "error": "HTTPSConnectionPool(host='www.usselfstorage.com', port=443): Max retries exceeded with url: / (Caused by ResponseError('"
     },
     {
       "url": "https://www.wsj.com/subscriptions/students",
@@ -335,15 +334,6 @@
       "finalUrl": "https://www.adobe.com/education/students/creativecloud.html",
       "companies": [
         "Adobe"
-      ]
-    },
-    {
-      "url": "https://www.amazon.com/amazonprime/student",
-      "classification": "working",
-      "status": 200,
-      "finalUrl": "https://www.amazon.com/amazonprime/student",
-      "companies": [
-        "Amazon"
       ]
     },
     {
@@ -742,6 +732,15 @@
       "finalUrl": "https://www.usbank.com/bank-accounts/checking-accounts/student-checking-account.html",
       "companies": [
         "U.S. Bank"
+      ]
+    },
+    {
+      "url": "https://www.usselfstorage.com/",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://usselfstorage.com/",
+      "companies": [
+        "U.S. Self Storage"
       ]
     },
     {
