@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-07T12:08:00Z",
+  "generatedAt": "2026-09-14T12:24:12Z",
   "summary": {
     "total": 84,
-    "working": 67,
-    "restricted": 14,
+    "working": 65,
+    "restricted": 16,
     "broken": 0,
     "timeout": 3
   },
@@ -72,6 +72,15 @@
       "finalUrl": "https://www.adidas.com/us",
       "companies": [
         "Adidas"
+      ]
+    },
+    {
+      "url": "https://www.amazon.com/amazonprime/student",
+      "classification": "restricted",
+      "status": 429,
+      "finalUrl": "https://www.amazon.com/amazonprime/student",
+      "companies": [
+        "Amazon"
       ]
     },
     {
@@ -144,6 +153,15 @@
       "finalUrl": "https://www.thenorthface.com/en-us/xplrpass",
       "companies": [
         "The North Face"
+      ]
+    },
+    {
+      "url": "https://www.ulta.com/",
+      "classification": "restricted",
+      "status": 403,
+      "finalUrl": "https://www.ulta.com/",
+      "companies": [
+        "Ulta Beauty"
       ]
     },
     {
@@ -325,15 +343,6 @@
       "finalUrl": "https://www.adobe.com/education/students/creativecloud.html",
       "companies": [
         "Adobe"
-      ]
-    },
-    {
-      "url": "https://www.amazon.com/amazonprime/student",
-      "classification": "working",
-      "status": 200,
-      "finalUrl": "https://www.amazon.com/amazonprime/student",
-      "companies": [
-        "Amazon"
       ]
     },
     {
@@ -705,15 +714,6 @@
       "finalUrl": "https://www.uhaul.com/",
       "companies": [
         "U-Haul"
-      ]
-    },
-    {
-      "url": "https://www.ulta.com/",
-      "classification": "working",
-      "status": 200,
-      "finalUrl": "https://www.ulta.com/",
-      "companies": [
-        "Ulta Beauty"
       ]
     },
     {
