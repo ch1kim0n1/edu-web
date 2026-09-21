@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-14T12:24:12Z",
+  "generatedAt": "2026-09-21T12:31:02Z",
   "summary": {
     "total": 84,
-    "working": 65,
-    "restricted": 16,
+    "working": 66,
+    "restricted": 15,
     "broken": 0,
     "timeout": 3
   },
@@ -153,15 +153,6 @@
       "finalUrl": "https://www.thenorthface.com/en-us/xplrpass",
       "companies": [
         "The North Face"
-      ]
-    },
-    {
-      "url": "https://www.ulta.com/",
-      "classification": "restricted",
-      "status": 403,
-      "finalUrl": "https://www.ulta.com/",
-      "companies": [
-        "Ulta Beauty"
       ]
     },
     {
@@ -421,7 +412,7 @@
       "url": "https://www.dell.com/en-us/lp/students",
       "classification": "working",
       "status": 200,
-      "finalUrl": "https://www.dell.com/en-us/lp/students",
+      "finalUrl": "https://www.dell.com/en-us/shop/member/lp/students",
       "companies": [
         "Dell"
       ]
@@ -714,6 +705,15 @@
       "finalUrl": "https://www.uhaul.com/",
       "companies": [
         "U-Haul"
+      ]
+    },
+    {
+      "url": "https://www.ulta.com/",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://www.ulta.com/",
+      "companies": [
+        "Ulta Beauty"
       ]
     },
     {
