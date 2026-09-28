@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-21T12:31:02Z",
+  "generatedAt": "2026-09-28T13:29:02Z",
   "summary": {
     "total": 84,
-    "working": 66,
-    "restricted": 15,
+    "working": 65,
+    "restricted": 16,
     "broken": 0,
     "timeout": 3
   },
@@ -108,6 +108,15 @@
       "finalUrl": "https://www.autodesk.com/education/edu-software/overview",
       "companies": [
         "Autodesk"
+      ]
+    },
+    {
+      "url": "https://www.expedia.com/",
+      "classification": "restricted",
+      "status": 429,
+      "finalUrl": "https://www.expedia.com/",
+      "companies": [
+        "Expedia"
       ]
     },
     {
@@ -331,7 +340,7 @@
       "url": "https://www.adobe.com/creativecloud/buy/students.html",
       "classification": "working",
       "status": 200,
-      "finalUrl": "https://www.adobe.com/education/students/creativecloud.html",
+      "finalUrl": "https://www.adobe.com/education/students/creativecloud.html?rdt_cid=5736644133364468804",
       "companies": [
         "Adobe"
       ]
@@ -451,15 +460,6 @@
       "finalUrl": "https://www.esri.com/en-us/arcgis/products/arcgis-for-student-use/overview",
       "companies": [
         "ArcGIS"
-      ]
-    },
-    {
-      "url": "https://www.expedia.com/",
-      "classification": "working",
-      "status": 200,
-      "finalUrl": "https://www.expedia.com/",
-      "companies": [
-        "Expedia"
       ]
     },
     {
