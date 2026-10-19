@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-12T15:00:58Z",
+  "generatedAt": "2026-10-19T12:45:54Z",
   "summary": {
     "total": 84,
-    "working": 65,
+    "working": 64,
     "restricted": 16,
     "broken": 0,
-    "timeout": 3
+    "timeout": 4
   },
   "results": [
     {
@@ -27,6 +27,16 @@
         "ASOS"
       ],
       "error": "HTTPSConnectionPool(host='www.asos.com', port=443): Max retries exceeded with url: /us/discover/student-discount/ (Cause"
+    },
+    {
+      "url": "https://www.notion.com/product/notion-for-education",
+      "classification": "timeout",
+      "status": null,
+      "finalUrl": "https://www.notion.com/product/notion-for-education",
+      "companies": [
+        "Notion"
+      ],
+      "error": "HTTPSConnectionPool(host='www.notion.com', port=443): Max retries exceeded with url: /product/notion-for-education (Caus"
     },
     {
       "url": "https://www.united.com/en/us/fly/mileageplus/promotions/student-discount.html",
@@ -340,7 +350,7 @@
       "url": "https://www.adobe.com/creativecloud/buy/students.html",
       "classification": "working",
       "status": 200,
-      "finalUrl": "https://www.adobe.com/education/students/creativecloud.html",
+      "finalUrl": "https://www.adobe.com/education/students/creativecloud.html?sdid=2K4PC5GG&mv=social&mv2=paidsoc&ad_id=1877678149015553&adset_id=1877678137347170&campaign_id=1803590866089010&ttclid=E_C_P_CuEBJS5uj-PikIezVtv682S1OOcRIOx2IaK_WVOnUS6F7r7JAKaWE1-KknQ-RHs0eb0X3gliJqQZbagUmMZUzWIUHHHZfylo2SzjDCKDw9khlrSOqqK1baouJC-WDINtV8KINxrvYRKOKgS1-a80b_kZH1qMd87CrMZkBO4O_Bt-586e6wSA7SdSITDbXd8Pebrk8ESXo3EVc0sXiDKYR5Uvuu_Wu-ec4rKBM-9f_j9hjLlBR_g_jfacjuWu0GClDQxZseWpo_k8a817J729b5Q1oQUAbWHg-MJFr_T1Kz4agiH_EgR2Mi4w",
       "companies": [
         "Adobe"
       ]
@@ -597,15 +607,6 @@
       "finalUrl": "https://www.nike.com/help/a/student-discount",
       "companies": [
         "Nike"
-      ]
-    },
-    {
-      "url": "https://www.notion.com/product/notion-for-education",
-      "classification": "working",
-      "status": 200,
-      "finalUrl": "https://www.notion.com/product/notion-for-education",
-      "companies": [
-        "Notion"
       ]
     },
     {
