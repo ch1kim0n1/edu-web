@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-26T12:39:03Z",
+  "generatedAt": "2026-11-02T15:19:31Z",
   "summary": {
     "total": 84,
     "working": 65,
@@ -111,21 +111,21 @@
       ]
     },
     {
+      "url": "https://www.canva.com/education/",
+      "classification": "restricted",
+      "status": 403,
+      "finalUrl": "https://www.canva.com/education/",
+      "companies": [
+        "Canva"
+      ]
+    },
+    {
       "url": "https://www.expedia.com/",
       "classification": "restricted",
       "status": 429,
       "finalUrl": "https://www.expedia.com/",
       "companies": [
         "Expedia"
-      ]
-    },
-    {
-      "url": "https://www.footlocker.com/student-discount.html",
-      "classification": "restricted",
-      "status": 403,
-      "finalUrl": "https://www.footlocker.com/student-discount.html",
-      "companies": [
-        "Foot Locker"
       ]
     },
     {
@@ -147,12 +147,12 @@
       ]
     },
     {
-      "url": "https://www.paramountplus.com/account/signup/edu-offer/",
+      "url": "https://www.studentuniverse.com/",
       "classification": "restricted",
-      "status": 406,
-      "finalUrl": "https://www.paramountplus.com/account/signup/edu-offer/",
+      "status": 403,
+      "finalUrl": "https://www.studentuniverse.com/",
       "companies": [
-        "Paramount+"
+        "StudentUniverse"
       ]
     },
     {
@@ -277,7 +277,7 @@
       "url": "https://slack.com/help/articles/206646877-Slack-for-Education-terms-and-conditions",
       "classification": "working",
       "status": 200,
-      "finalUrl": "https://slack.com/help/articles/206646877-Apply-for-the-Slack-for-Education-discount",
+      "finalUrl": "https://slack.com/help/articles/206646877-Get-the-Slack-for-Education-discount",
       "companies": [
         "Slack"
       ]
@@ -391,15 +391,6 @@
       ]
     },
     {
-      "url": "https://www.canva.com/education/",
-      "classification": "working",
-      "status": 200,
-      "finalUrl": "https://www.canva.com/education/",
-      "companies": [
-        "Canva"
-      ]
-    },
-    {
       "url": "https://www.coursera.org/",
       "classification": "working",
       "status": 200,
@@ -469,6 +460,15 @@
       "finalUrl": "https://www.figma.com/education/",
       "companies": [
         "Figma"
+      ]
+    },
+    {
+      "url": "https://www.footlocker.com/student-discount.html",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://www.footlocker.com/student-discount.html",
+      "companies": [
+        "Foot Locker"
       ]
     },
     {
@@ -627,6 +627,15 @@
       ]
     },
     {
+      "url": "https://www.paramountplus.com/account/signup/edu-offer/",
+      "classification": "working",
+      "status": 200,
+      "finalUrl": "https://www.paramountplus.com/account/signup/edu-offer/",
+      "companies": [
+        "Paramount+"
+      ]
+    },
+    {
       "url": "https://www.peacocktv.com/student",
       "classification": "working",
       "status": 200,
@@ -678,15 +687,6 @@
       "finalUrl": "https://www.studentbeans.com/us",
       "companies": [
         "Student Beans"
-      ]
-    },
-    {
-      "url": "https://www.studentuniverse.com/",
-      "classification": "working",
-      "status": 200,
-      "finalUrl": "https://home.byojet.com/student-universe?referrer=StudentUniverse_US",
-      "companies": [
-        "StudentUniverse"
       ]
     },
     {
