@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-02T15:19:31Z",
+  "generatedAt": "2026-11-09T15:48:17Z",
   "summary": {
     "total": 84,
     "working": 65,
@@ -340,7 +340,7 @@
       "url": "https://www.adobe.com/creativecloud/buy/students.html",
       "classification": "working",
       "status": 200,
-      "finalUrl": "https://www.adobe.com/education/students/creativecloud.html",
+      "finalUrl": "https://www.adobe.com/education/students/creativecloud.html?ef_id=Cj0KCQiA-5a9BhCBARIsACwMkJ6nS-5J0QnmX7dllIxIBugr-_k6KuRAds0gamitgceXi4ylZgH8uesaAsz4EALw_wcB:G:s&gad_source=1&gclid=REMOVED&mv=search&mv=search&mv2=paidsearch&s_kwcid=AL!3085!3!378884733024!e!!g!!buy%20adobe!151096840!77591499016&sdid=6NCS7248",
       "companies": [
         "Adobe"
       ]
